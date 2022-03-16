@@ -11,62 +11,19 @@
       rgba(100, 0, 123, 1) 0%,
       rgba(62, 20, 86, 1) 100%
     );
-    overflow: hidden;
-  }
-  body,
-  ul,
-  h1,
-  h2,
-  h3,
-  p,
-  button,
-  a,
-  div {
-    @apply m-0 p-0 font-['Quicksand'] tracking-wide text-white;
-  }
-  button {
-    @apply mt-10 cursor-pointer rounded-3xl border-2 border-solid border-white bg-transparent py-3 px-8 text-white opacity-70;
-  }
-  header {
-    @apply flex items-center p-10;
-  }
-  header h1 {
-    @apply w-screen border-b-2 border-solid border-[rgba(255,255,255,0.2)] pb-5 text-3xl pl-4;
+    @apply overflow-hidden m-0 p-0 font-['Quicksand'] tracking-wide text-white;
   }
 }
 
 @layer components {
   header .pizza-svg {
-    @apply w-20 overflow-visible stroke-white stroke-[4];
     stroke-linejoin: round;
     stroke-linecap: round;
-  }
-  .container {
-    @apply mx-auto mb-10 mt-24 max-w-xs;
-  }
-  .container h3 {
-    @apply mb-2 border-b-2 border-solid border-[rgba(255,255,255,0.2)] pb-2;
-  }
-  .container li {
-    @apply cursor-pointer p-2;
   }
   li span.active {
     @apply font-bold;
   }
   li span.active::before {
     @apply relative -top-[2px] mr-2 inline-block scale-x-[0.8] scale-y-100 content-['>'];
-  }
-  .home h2 {
-    @apply mb-8 text-4xl;
-  }
-  .home.container,
-  .order.container {
-    @apply text-center;
-  }
-  .home button {
-    @apply my-8 mx-5 border-4 border-solid border-white py-4 px-8 text-3xl text-white;
-  }
-  .order p {
-    @apply my-5 mx-auto;
   }
 }
